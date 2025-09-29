@@ -1,0 +1,259 @@
+# ================================
+# SECRETS AND ENVIRONMENT FILES
+# ================================
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+config.json
+secrets.json
+
+# ================================
+# PYTHON ENVIRONMENT & CACHE
+# ================================
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ================================
+# VIDEO FILES AND MEDIA
+# ================================
+# Input videos (large files)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.webm
+*.m4v
+
+# Audio files
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# Image files (if large datasets)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Video clips directory (can be large)
+clips/
+videos/
+media/
+data/
+
+# ================================
+# AI/ML MODEL FILES
+# ================================
+# Pre-trained models (large files)
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pb
+*.onnx
+*.tflite
+
+# Model cache directories
+.cache/
+models/
+checkpoints/
+weights/
+
+# Hugging Face cache
+.transformers_cache/
+.cache/huggingface/
+
+# OpenCV models cache
+.opencv_models/
+
+# ================================
+# DATABASE AND INDEX FILES
+# ================================
+# FAISS indices (can be regenerated)
+*.index
+*.faiss
+video_embeddings.index
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# JSON data files (if large)
+video_filenames.json
+*_embedding.json
+*_analysis.json
+
+# ================================
+# LOGS AND TEMPORARY FILES
+# ================================
+# Logs
+*.log
+logs/
+*.out
+*.err
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+temp/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ================================
+# IDE AND EDITOR FILES
+# ================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ================================
+# OPERATING SYSTEM FILES
+# ================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ================================
+# STREAMLIT SPECIFIC
+# ================================
+# Streamlit cache
+.streamlit/
+
+# ================================
+# TESTING AND COVERAGE
+# ================================
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ================================
+# DOCUMENTATION
+# ================================
+docs/_build/
+.sphinx/
+
+# ================================
+# PACKAGE MANAGERS
+# ================================
+# npm (if using Node.js tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Conda
+.conda/
+
+# ================================
+# LARGE DATA FILES
+# ================================
+# Add specific large files that shouldn't be tracked
+# Uncomment and modify as needed:
+# dataset/
+# large_video.mp4
+# training_data/
+
+# ================================
+# BACKUP FILES
+# ================================
+*.bak
+*.backup
+*.old
+*.orig
+
+# ================================
+# COMPRESSION FILES
+# ================================
+*.zip
+*.tar.gz
+*.rar
+*.7z

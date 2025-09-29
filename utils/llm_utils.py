@@ -1,5 +1,10 @@
 import google.generativeai as genai
 import base64
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 def validate_with_llm(query, retrieved_clips):
     """
@@ -12,7 +17,11 @@ def validate_with_llm(query, retrieved_clips):
     Returns:
         str: The LLM's response, including opinions and analysis.
     """
-    genai.configure(api_key="")
+    api_key = os.getenv('GOOGLE_API_KEY')
+    if not api_key:
+        raise ValueError("GOOGLE_API_KEY not found in environment variables. Please set it in your .env file.")
+    
+    genai.configure(api_key=api_key)
     llm = genai.GenerativeModel('models/gemini-2.0-flash')
     video_file_name = f"clips/{retrieved_clips[0]}"
     video_bytes = open(video_file_name, 'rb').read()
